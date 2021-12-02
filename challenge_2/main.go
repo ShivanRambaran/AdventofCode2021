@@ -45,7 +45,7 @@ func part_1(lines []string, int_lines [1001]int) {
 	horizontal := 0
 	vertical := 0
 
-	for i := 0; i <= len(lines)-1; i++ {
+	for i := 0; i < len(lines); i++ {
 		fmt.Println(lines[i], int_lines[i])
 		if lines[i] == "forward" {
 			horizontal += int_lines[i]
@@ -68,7 +68,7 @@ func part_2(lines []string, int_lines [1001]int) {
 	vertical := 0
 	aim := 0
 
-	for i := 0; i <= len(lines)-1; i++ {
+	for i := 0; i < len(lines); i++ {
 		fmt.Println(lines[i], int_lines[i], aim)
 		if lines[i] == "forward" {
 			if aim == 0 {
